@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,11 +33,10 @@ const Navbar = () => {
             <Link to="/skills" className="hover:text-red-600" onClick={() => setIsOpen(false)}>Skills</Link>
             <Link to="/contact" className="hover:text-red-600" onClick={() => setIsOpen(false)}>Contact</Link>
 
-            <div className="flex justify-center md:hidden space-x-4 mt-4 text-gray-700">
-                <a href="#" className="hover:text-red-600 text-2xl"><FaInstagram /></a>
-                <a href="#" className="hover:text-red-600 text-2xl"><FaTwitter /></a>
-                <a href="#" className="hover:text-red-600 text-2xl"><FaLinkedin /></a>
-                <a href="#" className="hover:text-red-600 text-2xl"><FaGithub /></a>
+            <div className="flex justify-center md:justify-start space-x-4 mt-4 text-gray-700">
+              <a href="https://www.linkedin.com/in/jeremiah-bankole/" target="_blank" className="hover:text-red-600 text-2xl"><FaLinkedin /></a>
+              <a href="https://www.youtube.com/@havefunwithtech" target="_blank" className="hover:text-red-600 text-2xl"><FaYoutube /></a>
+              <a href="https://github.com/Adeoye-J" target="_blank" className="hover:text-red-600 text-2xl"><FaGithub /></a>
             </div>
           </ul>
         </div>

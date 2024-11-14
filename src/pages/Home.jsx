@@ -38,9 +38,7 @@ const Home = () => {
 
       <div className="md:w-1/2 mt-10 md:mt-0 relative flex justify-center">
         <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
-          {/* Dotted Circle */}
           <div className="absolute inset-0 border-dotted border-2 border-gray-400 rounded-full" style={{ margin: '20px' }}></div>
-          {/* Image */}
           <img
             src="/jeremiah.png"
             alt="Jeremiah Bankole"
