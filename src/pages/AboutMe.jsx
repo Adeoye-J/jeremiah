@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
@@ -33,10 +33,9 @@ const AboutMe = () => {
         
         {/* Social Media Icons */}
         <div className="flex justify-center md:justify-start space-x-4 mt-4 text-gray-700">
-          <a href="#" className="hover:text-red-600 text-2xl"><FaInstagram /></a>
-          <a href="#" className="hover:text-red-600 text-2xl"><FaTwitter /></a>
-          <a href="#" className="hover:text-red-600 text-2xl"><FaLinkedin /></a>
-          <a href="#" className="hover:text-red-600 text-2xl"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/jeremiah-bankole/" target="_blank" className="hover:text-red-600 text-2xl"><FaLinkedin /></a>
+          <a href="https://www.youtube.com/@havefunwithtech" target="_blank" className="hover:text-red-600 text-2xl"><FaYoutube /></a>
+          <a href="https://github.com/Adeoye-J" target="_blank" className="hover:text-red-600 text-2xl"><FaGithub /></a>
         </div>
       </div>
     </section>

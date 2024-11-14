@@ -18,7 +18,7 @@ const Home = () => {
         <button className="bg-red-600 text-white px-6 py-2 rounded-md mt-4 hover:bg-red-700">
           <Link to={"/contact"}>Contact Me</Link>
         </button>
-        <div className="flex items-center gap-3">
+        {/* <div className="flex items-center gap-3">
           <Link to="https://www.linkedin.com/in/jeremiah-bankole/" target="_blank">
             <FaLinkedin size={25} className="text-red-600 cursor-pointer hover:text-red-700" />
           </Link>
@@ -28,6 +28,11 @@ const Home = () => {
           <Link to="https://github.com/Adeoye-J" target="_blank">
             <FaGithub size={25} className="text-red-600 cursor-pointer hover:text-red-700" />
           </Link>
+        </div> */}
+        <div className="flex justify-center md:justify-start space-x-4 mt-4 text-gray-700">
+          <a href="https://www.linkedin.com/in/jeremiah-bankole/" target="_blank" className="hover:text-red-600 text-2xl"><FaLinkedin /></a>
+          <a href="https://www.youtube.com/@havefunwithtech" target="_blank" className="hover:text-red-600 text-2xl"><FaYoutube /></a>
+          <a href="https://github.com/Adeoye-J" target="_blank" className="hover:text-red-600 text-2xl"><FaGithub /></a>
         </div>
       </div>
 
