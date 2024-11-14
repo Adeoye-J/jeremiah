@@ -4,7 +4,6 @@ import { FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
 const AboutMe = () => {
   return (
     <section className="flex gap-4 flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 p-10">
-      {/* Left Section with Image */}
       <div className="md:w-1/2 w-full flex justify-center mb-8 md:mb-0">
         <div className="w-[400px] h-[400px] bg-red-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
           <img
@@ -15,7 +14,6 @@ const AboutMe = () => {
         </div>
       </div>
 
-      {/* Right Section with Text */}
       <div className="md:w-1/2 w-full space-y-4 text-center md:text-left animate-fadeInUp">
         <h2 className="text-4xl font-bold text-gray-800">About Me</h2>
         <h3 className="text-xl font-semibold text-red-600">Jeremiah Bankole - Frontend Web Developer</h3>
@@ -31,7 +29,6 @@ const AboutMe = () => {
           Let’s build something awesome together!
         </p>
         
-        {/* Social Media Icons */}
         <div className="flex justify-center md:justify-start space-x-4 mt-4 text-gray-700">
           <a href="https://www.linkedin.com/in/jeremiah-bankole/" target="_blank" className="hover:text-red-600 text-2xl"><FaLinkedin /></a>
           <a href="https://www.youtube.com/@havefunwithtech" target="_blank" className="hover:text-red-600 text-2xl"><FaYoutube /></a>
