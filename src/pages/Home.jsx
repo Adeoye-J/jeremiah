@@ -1,45 +1,10 @@
-// import React from 'react';
-// import { motion } from 'framer-motion';
-
-// const Home = () => (
-//   <section id="home" className="bg-blue-50 py-20 px-4 md:px-0">
-//       <div className="container mx-auto flex flex-col md:flex-row items-center">
-//         <div className="md:w-1/2 space-y-4">
-//           <p className="text-lg">Hello,</p>
-//           <h1 className="text-5xl font-bold text-gray-800">
-//             I'm <span className="text-blue-600">Jeremiah Bankole</span>
-//           </h1>
-//           <p className="text-xl text-blue-600">Frontend Web Developer</p>
-//           <p className="text-gray-600">From Nigeria</p>
-//           <motion.button
-//             whileHover={{ scale: 1.1 }}
-//             className="bg-blue-600 text-white px-6 py-2 mt-4 font-semibold rounded-md shadow-md hover:bg-blue-700 transition"
-//           >
-//             Hire Me
-//           </motion.button>
-//         </div>
-        
-//         <div className="md:w-1/2 mt-8 md:mt-0">
-//           <img
-//             src="/jeremiah.png"
-//             alt="Profile"
-//             className="w-3/4 mx-auto rounded-full shadow-lg"
-//           />
-//         </div>
-//       </div>
-//     </section>
-// );
-
-// export default Home;
-
-
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaLinkedin, FaYoutube, FaGithub } from "react-icons/fa";
 
 const Home = () => {
   return (
     <section className="flex flex-col md:flex-row items-center bg-gray-100 p-8 md:p-20 min-h-[100vh]">
-      {/* Left Text Section */}
       <div className="md:w-1/2 space-y-4 text-center md:text-left">
         <p className="text-lg font-semibold">Hi There, I'm</p>
         <h1 className="text-4xl md:text-5xl font-bold">Jeremiah Bankole</h1>
@@ -53,9 +18,19 @@ const Home = () => {
         <button className="bg-red-600 text-white px-6 py-2 rounded-md mt-4 hover:bg-red-700">
           <Link to={"/contact"}>Contact Me</Link>
         </button>
+        <div className="flex items-center gap-3">
+          <Link to="https://www.linkedin.com/in/jeremiah-bankole/" target="_blank">
+            <FaLinkedin size={25} className="text-red-600 cursor-pointer hover:text-red-700" />
+          </Link>
+          <Link to="https://www.youtube.com/@havefunwithtech" target="_blank">
+            <FaYoutube size={25} className="text-red-600 cursor-pointer hover:text-red-700" />
+          </Link>
+          <Link to="https://github.com/Adeoye-J" target="_blank">
+            <FaGithub size={25} className="text-red-600 cursor-pointer hover:text-red-700" />
+          </Link>
+        </div>
       </div>
 
-      {/* Right Image Section */}
       <div className="md:w-1/2 mt-10 md:mt-0 relative flex justify-center">
         <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
           {/* Dotted Circle */}

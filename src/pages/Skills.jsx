@@ -58,11 +58,7 @@ const skillsList = [
   {
     name: "Express JS",
     logo: "/images/express.png"
-  },
-  {
-    name: "MongoDB",
-    logo: "/images/mongoDB.png"
-  },
+  }
 ]
 
 const Skills = () => (
@@ -70,7 +66,7 @@ const Skills = () => (
     initial={{ y: 100, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ duration: 0.5 }}
-    className="p-10"
+    className="bg-gray-50 p-10"
   >
     <h2 className="text-4xl font-bold mb-4 text-gray-800">Skills</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

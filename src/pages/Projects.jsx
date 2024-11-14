@@ -1,39 +1,13 @@
-// import React from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
-// const projects = [
-//   { name: "Project 1", description: "Description for Project 1" },
-//   { name: "Project 2", description: "Description for Project 2" },
-//   { name: "Project 3", description: "Description for Project 3" },
-// ];
-
-// const Projects = () => (
-//   <motion.div 
-//     initial={{ opacity: 0 }} 
-//     animate={{ opacity: 1 }}
-//     className="p-10 grid grid-cols-1 md:grid-cols-2 gap-6"
-//   >
-//     <h2 className="text-3xl font-bold mb-4">Projects</h2>
-//     {projects.map((project, index) => (
-//       <motion.div 
-//         key={index}
-//         whileHover={{ scale: 1.05 }}
-//         className="bg-gray-800 p-6 rounded-lg"
-//       >
-//         <h3 className="text-xl font-semibold">{project.name}</h3>
-//         <p className="text-gray-400">{project.description}</p>
-//       </motion.div>
-//     ))}
-//   </motion.div>
-// );
-
-// export default Projects;
-
-
-import React from 'react';
-
-// Sample data for portfolio projects
 const projects = [
+  {
+    title: 'Tinka',
+    description: 'A website that helps one Reclaim his or her Mental Health Stability - React, Tailwind, Shadcn',
+    image: '/images/tinka.png',
+    link: "https://tinkahealthservices.com/",
+  },
   {
     title: 'BlogSphere',
     description: 'A blog hub for reading, commenting, and discovering similar books from favorite authors.',
@@ -59,20 +33,11 @@ const projects = [
     link: "https://eduventure-omega.vercel.app",
   },
   {
-    title: 'To-do List',
-    description: 'A ReactJS app that enables users to add, update, and remove tasks from a to-do list.',
-    image: '/path/to/to-do-list.jpg',
-  },
-  // {
-  //   title: 'AI Image Generator',
-  //   description: 'A web app that generates images from entered text using OpenAI and the DALL-E.',
-  //   image: '/path/to/ai-image-generator.jpg',
-  // },
-  // {
-  //   title: 'Registration Form',
-  //   description: 'A registration form for new users built with ReactJS.',
-  //   image: '/path/to/registration-form.jpg',
-  // },
+    title: 'World Atlas',
+    description: 'This is a React-based web application that provides detailed information about countries around the world. The app fetches data from the REST Countries API and displays it in an intuitive and user-friendly interface.',
+    image: '/images/world_atlas.png',
+    link: "https://world-atlas-ten.vercel.app/",
+  }
 ];
 
 function Projects() {
