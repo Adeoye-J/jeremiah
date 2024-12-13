@@ -9,6 +9,12 @@ const projects = [
     link: "https://tinkahealthservices.com/",
   },
   {
+    title: 'Care Dental',
+    description: 'A user-friendly platform that connects individuals with affordable dental care solutions.',
+    image: '/images/caredental.png',
+    link: "https://caredentalsavings.com/",
+  },
+  {
     title: 'BlogSphere',
     description: 'A blog hub for reading, commenting, and discovering similar books from favorite authors.',
     image: '/images/elevate.png',
