@@ -40,7 +40,7 @@ const projects = [
   },
   {
     title: 'World Atlas',
-    description: 'This is a React-based web application that provides detailed information about countries around the world. The app fetches data from the REST Countries API and displays it in an intuitive and user-friendly interface.',
+    description: 'This is a React-based web application that provides detailed information about countries around the world.',
     image: '/images/world_atlas.png',
     link: "https://world-atlas-ten.vercel.app/",
   }
